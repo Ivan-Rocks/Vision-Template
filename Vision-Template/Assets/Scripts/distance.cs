@@ -20,6 +20,6 @@ public class distance : MonoBehaviour
     {
         dist = Vector3.Distance(stimulus.transform.position, cell.transform.position);
         text.text = dist.ToString();
-        print(dist);
+        //print(dist);
     }
 }

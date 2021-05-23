@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: AS9F97P/////AAABmUj/IylllER9v+7Cwd6Vu3oW54s6dx1xnklm7YkY66hN1sfBc21mXfA15LjRin4tqd9CvX/A5PqgDBiZurgVpPC2P/pDo5AztgneiBp4k1fPV25AwMJ0025dMnskgCYfr0BPovqwBqYZ9AcNYPdQ5LBZZtryelUxSLLnQIu8UPcj3XMciinf4Vr7+k7C6T8zPqSCpnn6QPxtqLNOBt1Xs3FxU1TP/xvMOYXdkHM0ntez1VBjyCFDVppaHKecrsanp1QVDu4jka7S954dUgxP+VKjiBizELkoq/GNnMQqq3y3cQIJ/T+CvT1cBjfyQBnm0PV0lP7q1inr7WTGoC6CQd7L3OeOKgzoiemSAo/R4cFv
-    ufoLicenseKey: QVpCMnhOei8vLy8vQUFBQUtPV2ZkaG9hZzBLeG1SZ1JMWFpqd1k0NzA0ZTVCenJDTjYzTVM3SW1FeWNJUzdFUlJ2V0pBODhxTlZqNThmRlVtSTZmb1QxRVNWb1RIbkdVb1A0RHQzVlhoZGYyZnhmRWdWR1I2K3A5QlF3VGpCcXAyUUtTNjRndWJyU0tHUTM4eHNtVzRzalk5N3NXanQra2YzTG9YbE95aDRJaXd1b2sxbUVEcFRHcENZclJTNndYNzBxbWtSQnpyRll2b3BGdnRYVHhpWFNMME9TNmYvYXFTL0R4cGJVSkRkY1VYUVppdVJtelY5QWY4V0EwOWw4RWV2WnZjTTliYTJXclZOTjFoWEk0d0xQL0lNdTVFbWRGL1FZc2NZZnJpV2pkRGpIT1Zob1FRU2NvdWZ3K2xyVFpJakNudjVJSWQyV2NNUHI0K1NGOVMwTlV1a0s4OVdXbVhHQ2F5Z0VCTzhEanRmS0lzVFhDeWFFMHVEQzU=
+    ufoLicenseKey: QVpyY0dyVC8vLy8vQUFBQUtFYmZJNWJyNFVnZWszbFNvUDMrVkZvMnFyMm1aZFV3cFJlZllGelEva016VCs4L0lKdFphWHlpMVJzOXRUVjVMUmVYL2dULzA2TS8zMml0WWJab2xwWkpxbU11d0RkWklKTHl3Z0tscmw3Z1pnUnRRVXI0ejBPNWpzUXB0aE41N0RCaWVzWlBET05FWlRPeVM1d2R5ZVNlTk5nbzViRFpEYmluRkp3aHgwVkd1eHQ2bkZ2QnBSd2hDSzNxblQwSHJ1WWRmdEd4U1N1YiswODFkSFhOb1FLSHM2WFZTMnQ3dGl1cVQzNVBLNWdtTDFoczVQbkJodzFNR1ZndGJGYWdmUE9VWEllYzFXVjV3ZHlWY001VVlDU3hsdy9peXpkVDJEOGU2RjQzOUtTY2lVUW0ydXNHcWdlWGJRb1lrb25wWUlRRVE4aUFDSTRhWHdIemYzL3d4Z2ZSVGY3bkpLQU9jd1djNmdTL3NhTkU=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 3
-    maxSimultaneousObjectTargets: 3
+    maxSimultaneousImageTargets: 2
+    maxSimultaneousObjectTargets: 2
     useDelayedLoadingObjectTargets: 0
     version: 8.1.7
-    eulaAcceptedVersions: '{"Values":["0.0","8.0","8.1","7.1","7.2","7.5","8.5"]}'
+    eulaAcceptedVersions: '{"Values":["8.1"]}'
   digitalEyewear:
     cameraOffset: 0.06
     distortionRenderingLayer: 31
@@ -50,12 +50,12 @@ MonoBehaviour:
     numDivisions: 2
     videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
       type: 3}
-    matteShader: {fileID: 4800000, guid: 66d0d78a3000021448b598bb54a3bfdf, type: 3}
+    matteShader: {fileID: 15310, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
   deviceTracker:
     autoInitTracker: 0
     autoStartTracker: 0
-    trackingMode: 1
+    trackingMode: 0
     posePrediction: 0
     modelCorrectionMode: 0
     modelTransformEnabled: 0
