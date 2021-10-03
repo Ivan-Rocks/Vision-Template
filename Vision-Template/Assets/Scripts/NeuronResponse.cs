@@ -14,6 +14,7 @@ public class NeuronResponse : MonoBehaviour
     public Color GraphBackground;
     public Color LineColor;
     public int datapoint;
+    public GameObject spotlight;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,20 @@ public class NeuronResponse : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        datapoint = (int) (spotlight.GetComponent<Light>().color.r * graphHeight);
+        print(datapoint);
+        data.Add(datapoint);
+        for(int i=data.Count-1; i>= Mathf.Max(0, data.Count - graphWidth); i--)
+        {
+            pixels[data[i] * graphWidth + graphWidth - data.Count + i] = LineColor;
+        }
+        m_texture.SetPixels(pixels);
+        m_texture.Apply();
+        for (int j = data.Count - 1; j >= Mathf.Max(0, data.Count - graphWidth); j--)
+        {
+            pixels[data[j] * graphWidth + graphWidth - data.Count + j] = GraphBackground;
+        }
+        /*
         datapoint++;
         datapoint %= graphHeight;  
         data.Add(datapoint);
@@ -47,6 +62,6 @@ public class NeuronResponse : MonoBehaviour
         for (int j = data.Count - 1; j >= Mathf.Max(0, data.Count - graphWidth); j--)
         {
             pixels[data[j] * graphWidth + graphWidth - data.Count + j] = GraphBackground;
-        }
+        }*/
     }
 }
